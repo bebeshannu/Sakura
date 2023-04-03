@@ -54,7 +54,7 @@ return (
     items-center
     transition
     duration-500
-   ${showBackground? 'bg-purple-200 bg-opacity-20' : '' }
+   ${showBackground? 'bg-zinc-900 bg-opacity-50' : '' }
 
     `}
     >
