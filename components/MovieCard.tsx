@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
+import {useRouter} from 'next/router';
 import FavouriteButton from '@/components/FavouriteButton';
 interface MovieCardProps{
     data:Record<string,any>;
@@ -9,7 +10,11 @@ interface MovieCardProps{
 const MovieCard: React.FC<MovieCardProps>=({
     data
 }) => {
+
+    const router =useRouter();
     return(
+
+
 <div className='group bg-zinc-900 col-span relative h-[12vw] '>
 <img className='
 cursor-pointer
@@ -75,8 +80,8 @@ flex
 justify-center
 items-center
 transition
-hover:bg-neutral-300
-' onClick={()=> {}}>
+hover:bg-neutral-300'
+ onClick={()=> router.push(`/watch/${data?.id}`)}>
     <AiFillPlayCircle size={30}/>
 </div>
 <FavouriteButton movieId={data?.id} /> 
