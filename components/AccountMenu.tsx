@@ -25,7 +25,7 @@ return(
     </div>
     <hr className="bg-gray-600 border-0 h-px my-4"/>
     <div onClick={()=> signOut()} className="px-3 text-center text-white text-sm hover:underline">
-     Sign Out Of Netflix
+     Sign Out Of Sakura
     </div>
   </div>
 </div>
